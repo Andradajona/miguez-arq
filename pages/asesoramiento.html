@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguez Arq.</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="icon" href="../img/favicon.png">
+</head>
+<body class="body">
+  <header>
+    <ul class="header">
+      <li> <a href="../index.html">
+          <img src="../img/home icon.png"
+            alt="Inicio"
+            width="100px"
+            height="90px" 
+        </a></li>
+      <li><a href="../pages/proyectos.html">/Proyectos </a></li>
+      <li><a href="../pages/estudio.html">/Estudio </a></li>
+      <li><a href="../pages/asesoramiento.html">/Asesoramiento </a></li>
+      <li><a href="../pages/contacto.html">/Contacto </a></li>
+    </ul>
+  </header>
+    <main>
+        <h1 class="nuestros_proyectos">
+          Asesoramiento
+        </h1><br>
+        <form>
+            <p>Seleciona el tipo de construccion:<br>
+                <label><input type="radio" name="tipo" value="departamento" checked> Departamento </label><br>
+                <label><input type="radio" name="tipo" value="ph"> PH </label><br>
+                <label><input type="radio" name="tipo" value="casa"> Casa </label>
+            </p><br>
+            <p>Tenes planos? <br>
+              <select name="respuesta" id="respuesta">
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+                <option value="seleccionar" disabled selected>Seleccione una opción</option>
+              </select>
+            </p><br>
+            <p>          
+              <input type="submit" value="Enviar datos">          
+              <input type="reset" value="Restaurar formulario">          
+            </p>          
+          </form>
+    </main>    
+    <footer class="footer">
+      <p>Derechos de autor © 2023. Mi sitio web.</p>
+     </footer>
+</body>
+</html>
