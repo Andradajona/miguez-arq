@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/style.css">
-</head>
-<body class="body">
-  <header>
-    <ul class="header">
-      <li> <a href="../index.html">
-          <img src="../img/home icon.png"
-            alt="Inicio"
-            width="100px"
-            height="90px" 
-        </a></li>
-      <li><a href="../pages/proyectos.html">/Proyectos </a></li>
-      <li><a href="../pages/estudio.html">/Estudio </a></li>
-      <li><a href="../pages/asesoramiento.html">/Asesoramiento </a></li>
-      <li><a href="../pages/contacto.html">/Contacto </a></li>
-    </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miguez Arq.</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  </head>
+
+  <body class="body">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Miguez ARQ.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/estudio.html">/Estudio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../pages/proyectos.html">/Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/asesoramiento.html">/Asesoramiento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">/Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
   </header>    
     <main>
       <h1 class="nuestros_proyectos">
@@ -43,14 +60,59 @@
         <img class="tarjetita_imagen" src="../img/proyectos1.jpeg" alt="proyecto1">
         <h2 class="tarjetita_titulo">Proyecto N3 </h2>
         <p class="tarjetita_texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum commodi quae recusandae pariatur enim.</p>
-        <button class="tarjetita_boton"> Ver más </button>
+        <a href="#carouselExampleCaptions" class="tarjetita_boton"> Ver más 
       </div>
 
     </section>
     </main>     
-    <footer class="footer">
-     <p>Derechos de autor © 2023. Mi sitio web.</p>
-    </footer>
+    
+<br>
+<br>
+<br>
+    <section>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/vermas1.jpeg" class="d-block w-100" alt="vermas1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Primer Diapositiva</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../img/vermas2.jpeg" class="d-block w-100" alt="vermas2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Segunda Diapositiva</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../img/vermas3.jpeg" class="d-block w-100" alt="vermas3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Tercera Diapositiva</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 </body>
-
+<br>
+<br>
+<footer class="footer">
+      <p>Derechos de autor © 2023. Mi sitio web.</p>
+    </footer>
 </html>

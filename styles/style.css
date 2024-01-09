@@ -22,7 +22,7 @@ a:hover {color: rgb(80, 21, 21); text-decoration: none;}
     background-size: cover;
     }
 
-.header {
+.header .body{
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -47,6 +47,7 @@ a:hover {color: rgb(80, 21, 21); text-decoration: none;}
 }
 
 .cajita .h2 {
+    flex-wrap: wrap;
     font-family: "agrandir";
     font-size: 3rem;
     font-weight: 100;
@@ -137,3 +138,11 @@ text-decoration: underline;
     background-color: #f2f2f2;
     text-align: center;
 }
+
+@media (max-width: 600px) {
+    .hea {
+        background-color: aqua;
+    }
+}
+
+/*bootstrap*/
