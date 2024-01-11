@@ -125,6 +125,8 @@ text-decoration: underline;
     text-align: center;
 }
 
+/*media queries*/
+
 @media (max-width: 500px) {
     .cajita {
             margin: 1rem 1rem 1rem 1rem;
@@ -143,7 +145,6 @@ text-decoration: underline;
             gap: 20px;
             }
 }
-/*VER CUESTIONARIO QUE NO SE ADAPTA*/
 @media (max-width: 500px) {
     .cajita .h2 {
     font-family: "agrandir";
