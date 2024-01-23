@@ -13,10 +13,15 @@
 a {color: rgb(208, 6, 6); text-decoration: none;}
 a:hover {color: rgb(142, 25, 25); text-decoration: none;}
 
-.logo {
+.body {
+    background-image: url(../img/bg.png);
+    padding-bottom: 60px;
+    .logo {
     height: 5vw;
     display: flex;
       }
+}
+
 
 .cajita {
     border: 2px solid #868082;
@@ -25,41 +30,34 @@ a:hover {color: rgb(142, 25, 25); text-decoration: none;}
     height: 70vh;
     background: url(../img/home.jpeg);
     background-size: cover;
-    }
-
-    .cajita .h1 {
+    
+    .h1 {
         font-size: 4rem;
         font-weight: 800;
         margin-top: 30px;
         margin-left: 35px;
         margin-right: 900px;
         font-family: "agrandir";
-        background-color: #8a8a8abb;    
+        background-color: #8a8a8abb;  
     }
-    
-    .cajita .h2 {
+    .h2 {
         flex-wrap: wrap;
         font-family: "agrandir";
         font-size: 3rem;
         font-weight: 100;
         margin-top: 30px;
         margin-left: 35px;
-        background-color: #df6c0f2a;
-    }
-    
- .body {
-    background-image: url(../img/bg.png);
-    padding-bottom: 60px;
-}
+        background-color: #df6c0f2a;}
+ }
 
-/*PROYECTOS*/
+ /*PROYECTOS*/
 
 .nuestros_proyectos {
     padding-top: 1.5%;
     padding-left: 2%;
     display: flex;
     font-size: 2rem;
-    font-family: "agrandir", "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";;
+    font-family: "agrandir", "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
 }
 .tarjetitas {
     display: grid ;
@@ -69,6 +67,10 @@ a:hover {color: rgb(142, 25, 25); text-decoration: none;}
     justify-items: center;
     padding-top: 0.5rem;
     row-gap: 1rem;}
+    
+    .card {
+        width: 100%;
+        box-sizing: border-box;}
 
 .contacto
  {
@@ -81,26 +83,20 @@ a:hover {color: rgb(142, 25, 25); text-decoration: none;}
 .formulario {
     display: grid ;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-              "nombre   campo1"
-              "apellido campo2"
-              "celular  campo3"
-              "email    campo4"
+              "nombre   apellido"
+              "campo  campo2";
+    padding: 2rem;
+    row-gap: rem;
+    column-gap: 2rem
     ;
-    /*
-    padding-left: 400px;
-    display: flexbox;
-    justify-content: space-between;
-    font-size: 2rem;
-    font-family: "agrandir", "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
-*/}
-
-.terminos {
+    .terminos {
 text-decoration: underline;
  padding-top: 190px;
-    padding-left: 400px;
-}
+}}
+
+
 .tyc {
     font-family: "agrandir", "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
  padding: 10vw;
@@ -212,7 +208,13 @@ text-decoration: underline;
 @media (max-width: 500px) {
     .contacto , .formulario , .terminos {
            display: grid;
-           grid-template-rows: 1fr;   
+           grid-template-columns: 1fr;
+           grid-template-rows: 1fr 1fr 1fr 1fr;
+           grid-template-areas: 
+                            "nombre"
+                            "apellido"
+                            "numero"
+                            "email";
            padding: 1rem;
            gap: 5px;
            background-color: #d1c7b194; 

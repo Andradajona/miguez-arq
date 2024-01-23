@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "agrandir";
+  src: url(../fonts/Agrandir-Regular.otf);
+}
+a {
+  color: rgb(208, 6, 6);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(142, 25, 25);
+  text-decoration: none;
+}
+
+.body {
+  background-image: url(../img/bg.png);
+  padding-bottom: 60px;
+}
+.body .logo {
+  height: 5vw;
+  display: flex;
+}
+
+.cajita {
+  border: 2px solid #868082;
+  margin: 3rem 3rem 3rem 3rem;
+  width: 94.5vw;
+  height: 70vh;
+  background: url(../img/home.jpeg);
+  background-size: cover;
+}
+.cajita .h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-top: 30px;
+  margin-left: 35px;
+  margin-right: 900px;
+  font-family: "agrandir";
+  background-color: rgba(138, 138, 138, 0.7333333333);
+}
+.cajita .h2 {
+  flex-wrap: wrap;
+  font-family: "agrandir";
+  font-size: 3rem;
+  font-weight: 100;
+  margin-top: 30px;
+  margin-left: 35px;
+  background-color: rgba(223, 108, 15, 0.1647058824);
+}
+
+/*PROYECTOS*/
+.nuestros_proyectos {
+  padding-top: 1.5%;
+  padding-left: 2%;
+  display: flex;
+  font-size: 2rem;
+  font-family: "agrandir", "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
+}
+
+.tarjetitas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "proyecto1   proyecto2 proyecto3";
+  justify-items: center;
+  padding-top: 0.5rem;
+  row-gap: 1rem;
+}
+
+.card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contacto {
+  padding-top: 40px;
+  padding-left: 40px;
+  font-size: 2rem;
+  font-family: "agrandir", "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "nombre   apellido" "campo  campo2";
+  padding: 2rem;
+  row-gap: rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.formulario .terminos {
+  text-decoration: underline;
+  padding-top: 190px;
+}
+
+.tyc {
+  font-family: "agrandir", "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
+  padding: 10vw;
+}
+
+/*estudio*/
+.estudio {
+  padding-top: 40px;
+  padding-left: 40px;
+  font-size: 2rem;
+  font-family: "agrandir", "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
+}
+
+.texto_estudio {
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+.encuesta {
+  display: flex;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  align-items: start;
+}
+
+/*footer*/
+.footer {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+/*media queries*/
+@media (max-width: 500px) {
+  .cajita {
+    margin: 1rem 1rem 1rem 1rem;
+    height: 80vh;
+    background: url(../img/home-new-mobile.jpg);
+    background-size: cover;
+  }
+}
+@media (max-width: 500px) {
+  .tarjetita {
+    background-color: rgb(129, 129, 129);
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .cajita .h2 {
+    font-family: "agrandir";
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 1px;
+    margin-left: 17px;
+    margin-right: 11px;
+    background-color: rgba(209, 179, 186, 0.5137254902);
+  }
+}
+@media (max-width: 500px) {
+  .cajita .h1 {
+    font-size: 3rem;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .texto_estudio {
+    column-gAp: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 1rem;
+    background-color: rgba(209, 199, 177, 0.5137254902);
+  }
+}
+@media (max-width: 500px) {
+  .encuesta {
+    column-gAp: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 1rem;
+    background-color: rgba(194, 243, 139, 0.5137254902);
+  }
+}
+@media (max-width: 500px) {
+  .estudio {
+    column-gAp: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 1rem;
+    background-color: rgba(252, 251, 199, 0.5137254902);
+  }
+}
+@media (max-width: 500px) {
+  .tarjetitas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "proyecto1" "proyecto2" "proyecto3" "proyecto4";
+  }
+}
+@media (max-width: 500px) {
+  .contacto, .formulario, .terminos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nombre" "apellido" "numero" "email";
+    padding: 1rem;
+    gap: 5px;
+    background-color: rgba(209, 199, 177, 0.5803921569);
+    font-size: 3vh;
+  }
+}/*# sourceMappingURL=estilos.css.map */
