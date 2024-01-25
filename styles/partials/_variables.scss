@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "agrandir";
+    src: url(../fonts/Agrandir-Regular.otf);
+}
+
+$font-agrandir: "agrandir", "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
+$color-link: rgb(208, 6, 6);
+$color-link-hover: rgb(142, 25, 25);
+$cajita-border-color: #868082;
+$cajita-margin: 3rem;
+$cajita-width: 94.5vw;
+$cajita-height: 70vh;
+$cajita-bg-image: url(../img/home.jpeg);
+$cajita-h1-bg-color: #8a8a8abb;
+$cajita-h2-bg-color: #df6c0f2a;
+$body-bg-image: url(../img/bg.png);
+$mobile-breakpoint: 500px;

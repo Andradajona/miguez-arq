@@ -1,13 +1,13 @@
+@font-face {
+  font-family: "agrandir";
+  src: url(../fonts/Agrandir-Regular.otf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "agrandir";
-  src: url(../fonts/Agrandir-Regular.otf);
-}
 a {
   color: rgb(208, 6, 6);
   text-decoration: none;
@@ -34,6 +34,7 @@ a:hover {
   height: 70vh;
   background: url(../img/home.jpeg);
   background-size: cover;
+  font-family: "agrandir", "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
 }
 .cajita .h1 {
   font-size: 4rem;
@@ -41,12 +42,12 @@ a:hover {
   margin-top: 30px;
   margin-left: 35px;
   margin-right: 900px;
-  font-family: "agrandir";
+  font-family: "agrandir", "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
   background-color: rgba(138, 138, 138, 0.7333333333);
 }
 .cajita .h2 {
   flex-wrap: wrap;
-  font-family: "agrandir";
+  font-family: "agrandir", "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
   font-size: 3rem;
   font-weight: 100;
   margin-top: 30px;
@@ -56,7 +57,7 @@ a:hover {
 
 /*PROYECTOS*/
 .nuestros_proyectos {
-  padding-top: 1.5%;
+  padding-top: 3rem;
   padding-left: 2%;
   display: flex;
   font-size: 2rem;
@@ -68,13 +69,19 @@ a:hover {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "proyecto1   proyecto2 proyecto3";
   justify-items: center;
-  padding-top: 0.5rem;
+  padding-top: 4rem;
   row-gap: 1rem;
 }
 
 .card {
   width: 100%;
   box-sizing: border-box;
+}
+
+/*asesoramiento*/
+.asesoramiento {
+  padding-left: 60vh;
+  font-family: "agrandir", "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
 }
 
 .contacto {
@@ -93,6 +100,7 @@ a:hover {
   row-gap: rem;
   -moz-column-gap: 2rem;
        column-gap: 2rem;
+  font-size: medium;
 }
 .formulario .terminos {
   text-decoration: underline;
@@ -117,17 +125,20 @@ a:hover {
   font-size: 30px;
 }
 
-.encuesta {
-  display: flex;
-  -moz-column-gap: 100px;
-       column-gap: 100px;
-  align-items: start;
+/*contacto*/
+.volvercontacto {
+  text-align: center;
+  margin: 20px 0;
 }
 
 /*footer*/
 .footer {
-  background-color: #f2f2f2;
+  background-color: #f8f9fa;
+  padding: 10px;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 /*media queries*/
@@ -151,7 +162,7 @@ a:hover {
 }
 @media (max-width: 500px) {
   .cajita .h2 {
-    font-family: "agrandir";
+    font-family: "agrandir", "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
     font-size: 2rem;
     font-weight: 300;
     margin-top: 1px;
@@ -205,7 +216,7 @@ a:hover {
   }
 }
 @media (max-width: 500px) {
-  .contacto, .formulario, .terminos {
+  .contacto, .formulario, .terminos, .volvercontacto {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -213,6 +224,30 @@ a:hover {
     padding: 1rem;
     gap: 5px;
     background-color: rgba(209, 199, 177, 0.5803921569);
-    font-size: 3vh;
+    font-size: medium;
+  }
+}
+@media (max-width: 500px) {
+  .asesoramiento {
+    column-gAp: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 1rem;
+    background-color: rgba(255, 251, 0, 0.1725490196);
+  }
+}
+/*ANIMISTA*/
+.slide-in-right {
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }/*# sourceMappingURL=estilos.css.map */
