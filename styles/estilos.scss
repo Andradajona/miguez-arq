@@ -3,11 +3,11 @@
 @import "./partials/reset";
 
 
-a {color: rgb(208, 6, 6); text-decoration: none;}
-a:hover {color: rgb(142, 25, 25); text-decoration: none;}
+a {$color-link ; text-decoration: none;}
+a:hover {$color-link-hover;}
 
 .body {
-    background-image: url(../img/bg.png);
+    background-image: $body-bg-image;
     padding-bottom: 60px;
     .logo {
     height: 5vw;
@@ -21,7 +21,7 @@ a:hover {color: rgb(142, 25, 25); text-decoration: none;}
     margin: 3rem 3rem 3rem 3rem;
     width: 94.5vw;
     height: 70vh;
-    background: url(../img/home.jpeg);
+    background: $cajita-bg-image;
     background-size: cover;
     font-family: $font-agrandir;
     
@@ -32,7 +32,7 @@ a:hover {color: rgb(142, 25, 25); text-decoration: none;}
         margin-left: 35px;
         margin-right: 900px;
         font-family: $font-agrandir;
-        background-color: #8a8a8abb;  
+        background-color: $primary-color;  
     }
     .h2 {
         flex-wrap: wrap;
@@ -41,7 +41,7 @@ a:hover {color: rgb(142, 25, 25); text-decoration: none;}
         font-weight: 100;
         margin-top: 30px;
         margin-left: 35px;
-        background-color: #df6c0f2a;}
+        background-color: $secondary-color;}
  }
 
  /*PROYECTOS*/
@@ -91,6 +91,7 @@ a:hover {color: rgb(142, 25, 25); text-decoration: none;}
     row-gap: rem;
     column-gap: 2rem;
     font-size: medium;
+
     .terminos {
 text-decoration: underline;
  padding-top: 190px;
@@ -124,7 +125,7 @@ text-decoration: underline;
 
 /*footer*/
 .footer {
-    background-color: #f8f9fa;
+    background-color:$extra-color;
     padding: 10px;
     text-align: center;
     position: fixed;
@@ -138,19 +139,10 @@ text-decoration: underline;
     .cajita {
             margin: 1rem 1rem 1rem 1rem;
             height: 80vh;
-            background: url(../img/home-new-mobile.jpg);
+            background: $mobile-home-bg;
             background-size:cover;
     }}
 
-@media (max-width: 500px) {
-    .tarjetita {
-            background-color: rgb(129, 129, 129);
-            border-radius: 30px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-    }}
 
 @media (max-width: 500px) {
     .cajita .h2 {
@@ -160,7 +152,7 @@ text-decoration: underline;
             margin-top: 1px;
             margin-left: 17px;
             margin-right: 11px;
-            background-color: #d1b3ba83; 
+            background-color: $extra-color; 
     }}
 
 @media (max-width: 500px) {
@@ -176,7 +168,7 @@ text-decoration: underline;
                grid-template-columns: 1fr;
                padding: 2rem;
                gap: 1rem;
-               background-color: #d1c7b183; 
+               background-color: $secondary-color 
         }}
     
     @media (max-width: 500px) {
@@ -186,7 +178,7 @@ text-decoration: underline;
                grid-template-columns: 1fr;
                padding: 2rem;
                gap: 1rem;
-               background-color: #c2f38b83; 
+               background-color: $secondary-color; 
         }}
     
     @media (max-width: 500px) {
@@ -196,7 +188,7 @@ text-decoration: underline;
                grid-template-columns: 1fr;
                padding: 2rem;
                gap: 1rem;
-               background-color: #fcfbc783; 
+               background-color:$extra-color; 
         }}
     
 @media (max-width: 500px) {
@@ -223,7 +215,7 @@ text-decoration: underline;
                             "email";
            padding: 1rem;
            gap: 5px;
-           background-color: #d1c7b194; 
+           background-color:$secondary-color; 
            font-size: medium;
 }}
 
@@ -234,7 +226,7 @@ text-decoration: underline;
            grid-template-columns: 1fr;
            padding: 2rem;
            gap: 1rem;
-           background-color: #fffb002c; 
+           background-color: $secondary-color ; 
     }}
 
 /*ANIMISTA*/
