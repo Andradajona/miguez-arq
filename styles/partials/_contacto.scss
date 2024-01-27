@@ -1,0 +1,36 @@
+
+.contacto
+ {
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: 2rem;
+    font-family: $font-agrandir;
+}
+
+.formulario {
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+              "nombre   apellido"
+              "campo  campo2";
+    padding: 2rem;
+    row-gap: rem;
+    column-gap: 2rem;
+    font-size: medium;
+
+    .terminos {
+text-decoration: underline;
+ padding-top: 190px;
+}}
+
+
+.tyc {
+    font-family: $font-agrandir;
+ padding: 10vw;
+}
+
+.volvercontacto {
+    text-align: center;
+    margin: 20px 0;
+  }

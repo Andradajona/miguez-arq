@@ -3,135 +3,26 @@
 @import "./partials/reset";
 
 
-a {$color-link ; text-decoration: none;}
-a:hover {$color-link-hover;}
+a {color: rgb(208, 6, 6); text-decoration: none;}
+a:hover {color: rgb(142, 25, 25); text-decoration: none;}
 
-.body {
-    background-image: $body-bg-image;
-    padding-bottom: 60px;
-    .logo {
-    height: 5vw;
-    display: flex;
-      }
-}
+@import "./partials/body";
 
-
-.cajita {
-    border: 2px solid #868082;
-    margin: 3rem 3rem 3rem 3rem;
-    width: 94.5vw;
-    height: 70vh;
-    background: $cajita-bg-image;
-    background-size: cover;
-    font-family: $font-agrandir;
-    
-    .h1 {
-        font-size: 4rem;
-        font-weight: 800;
-        margin-top: 30px;
-        margin-left: 35px;
-        margin-right: 900px;
-        font-family: $font-agrandir;
-        background-color: $primary-color;  
-    }
-    .h2 {
-        flex-wrap: wrap;
-        font-family: $font-agrandir;
-        font-size: 3rem;
-        font-weight: 100;
-        margin-top: 30px;
-        margin-left: 35px;
-        background-color: $secondary-color;}
- }
+@import "./partials/cajita";
 
  /*PROYECTOS*/
-
-.nuestros_proyectos {
-    padding-top: 3rem;
-    padding-left: 2%;
-    display: flex;
-    font-size: 2rem;
-    font-family: $font-agrandir;
-}
-.tarjetitas {
-    display: grid ;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-              "proyecto1   proyecto2 proyecto3" ;
-    justify-items: center;
-    padding-top: 4rem;
-    row-gap: 1rem;}
-    
-    .card {
-        width: 100%;
-        box-sizing: border-box;}
+@import "./partials/proyectos";
 
  /*asesoramiento*/
- .asesoramiento {
-    padding-left: 60vh;
-    font-family: $font-agrandir;
- }       
-
-.contacto
- {
-    padding-top: 40px;
-    padding-left: 40px;
-    font-size: 2rem;
-    font-family: $font-agrandir;
-}
-
-.formulario {
-    display: grid ;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-              "nombre   apellido"
-              "campo  campo2";
-    padding: 2rem;
-    row-gap: rem;
-    column-gap: 2rem;
-    font-size: medium;
-
-    .terminos {
-text-decoration: underline;
- padding-top: 190px;
-}}
-
-
-.tyc {
-    font-family: $font-agrandir;
- padding: 10vw;
-}
-/*estudio*/
-
-.estudio {
-    padding-top: 40px;
-    padding-left: 40px;
-    font-size: 2rem;
-    font-family: $font-agrandir;
-}
-
-.texto_estudio {
-    margin-right: 20px;
-    font-size: 30px;
-} 
-
+@import "./partials/asesoramiento";     
 /*contacto*/
+@import "./partials/contacto";
 
-.volvercontacto {
-    text-align: center;
-    margin: 20px 0;
-  }
+/*estudio*/
+@import "./partials/estudio";
 
 /*footer*/
-.footer {
-    background-color:$extra-color;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
+@import "./partials/footer";
 
 /*media queries*/
 

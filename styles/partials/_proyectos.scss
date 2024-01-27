@@ -1,0 +1,19 @@
+.nuestros_proyectos {
+    padding-top: 3rem;
+    padding-left: 2%;
+    display: flex;
+    font-size: 2rem;
+    font-family: $font-agrandir;
+}
+.tarjetitas {
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+              "proyecto1   proyecto2 proyecto3" ;
+    justify-items: center;
+    padding-top: 4rem;
+    row-gap: 1rem;}
+    
+    .card {
+        width: 100%;
+        box-sizing: border-box;}
